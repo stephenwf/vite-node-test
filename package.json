@@ -1,0 +1,29 @@
+{
+  "name": "vite-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite-node server.koa-typescript.ts",
+    "build:client": "vite build --outDir dist/client --ssrManifest",
+    "build:server": "vite build --outDir dist/server --ssr src/index.server.ts "
+  },
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "@types/koa": "^2.13.4",
+    "koa": "^2.13.4",
+    "koa-connect": "^2.1.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "vite-node": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/koa__router": "^8.0.11",
+    "@types/react": "^18.0.7",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.1",
+    "express": "^4.18.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.6"
+  }
+}
